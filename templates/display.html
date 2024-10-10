@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>dept table all data</center>
+    <table>
+        <tr>
+            <th>dept no </th>
+            <th>dept name</th>
+            <th>dept loc</th>
+        </tr>
+        {% for to in depts %}
+        <tr>
+            <td>{{to.dnum}}</td>
+            <td>{{to.dname}}</td>
+            <td>{{to.dloc}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

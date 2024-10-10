@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <center>emplaoye data </center>
+    <table border="3px">
+        <tr>
+            <th>enum</th>
+            <th>ename</th>
+            <th>job</th>
+            <th>sal</th>
+            <th>dnum</th>
+            <td>mgr</td>
+            <td>comm</td>
+           
+        </tr>
+        {% for to in employes %}
+        <tr>
+            <td>{{to.enum}}</td>
+            <td>{{to.ename}}</td>
+            <td>{{to.job}}</td>
+            <td>{{to.sal}}</td>
+            <td>{{to.dnum}}</td>
+            <td>{{to.mgr}}</td>
+            <td>{{to.comm}}</td>
+            
+        </tr>
+        {% endfor %}
+
+    </table>
+</body>
+</html>

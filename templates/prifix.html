@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        {% for do in LDTD %}
+            <h1>{{do.dname}}</h1>
+            {% for em in do.emp_set.all %}
+                <h3>{{ em.ename }}</h3>
+                <h5>{{em.job}}</h5>
+            {% endfor %}
+
+        {% endfor %}
+    </center>
+</body>
+</html>
